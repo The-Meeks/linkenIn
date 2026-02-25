@@ -203,9 +203,13 @@ Best regards,
           </div>
           <div className="mb-6 rounded-xl overflow-hidden shadow-lg max-w-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32a7?w=1200&q=80" 
+              src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200" 
               alt="Networking success" 
               className="w-full h-48 object-cover"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = 'https://via.placeholder.com/800x400/14b8a6/ffffff?text=Networking+Success';
+              }}
             />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

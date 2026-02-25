@@ -7,6 +7,7 @@ import StrategicQuestions from './sections/StrategicQuestions';
 import SalaryNegotiation from './sections/SalaryNegotiation';
 import ThankYouTemplates from './sections/ThankYouTemplates';
 import NetworkingTemplates from './sections/NetworkingTemplates';
+import PDFDownloadButton from './components/PDFDownloadButton';
 
 function App() {
   const sections = [
@@ -90,6 +91,9 @@ function App() {
           </div>
         </div>
       </footer>
+      
+      {/* PDF Download Button */}
+      <PDFDownloadButton />
     </div>
   );
 }
