@@ -92,15 +92,15 @@ function PDFDownloadButton() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 md:bottom-8 md:right-8">
+    <div className="fixed bottom-4 right-4 z-[9999] md:bottom-8 md:right-8">
       <button
         id="pdf-download-btn"
         onClick={handleDownloadPDF}
-        className="group relative flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-3 md:px-6 md:py-4 rounded-full shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 border-2 border-white/20 backdrop-blur-sm"
+        className="group relative flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-2 md:px-6 md:py-4 rounded-full shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 border-2 border-white/20 backdrop-blur-sm min-w-[120px] md:min-w-[180px]"
         title="Download complete guide as PDF"
       >
-        <Download className="w-5 h-5 md:w-6 md:h-6 group-hover:animate-bounce" />
-        <span className="font-semibold text-sm md:text-base md:text-lg">Download PDF</span>
+        <Download className="w-4 h-4 md:w-6 md:h-6 group-hover:animate-bounce flex-shrink-0" />
+        <span className="font-semibold text-xs md:text-sm md:text-base">Download PDF</span>
         
         {/* Tooltip - hidden on mobile */}
         <div className="absolute bottom-full right-0 mb-3 px-4 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none hidden md:block">
